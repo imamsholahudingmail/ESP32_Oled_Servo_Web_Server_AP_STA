@@ -68,6 +68,7 @@ void setup() {
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
 
+
   TampilkanDiLayar();
 
   server.begin();
@@ -80,6 +81,9 @@ void TampilkanDiLayar() {
   display.print("WEB Servo");
   display.setTextSize(1);
   //printWiFiMode(WiFi.getMode());
+  display.setCursor(0, 26);
+  display.print("IP : ");
+  display.print(WiFi.localIP());
 
   //Rotate the servo
   myservo.write(valueString.toInt());
