@@ -22,7 +22,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // Replace with your network credentials
 const char* ssid = "DigPart";
-const char* password = "12443411";
+const char* password = "1234567890";
 
 // Pengaturan untuk mode AP (jika mode STA gagal)
 const char* ssid_ap = "ESP32_AP";
